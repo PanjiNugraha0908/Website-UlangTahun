@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ucapan Ulang Tahun Spesial!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="center-wrapper">
+        <!-- Amplop baru dengan desain bunga -->
+        <div class="envelope" id="envelope">
+            <div class="envelope-flap"></div>
+            <div class="shine"></div>
+            <div class="open-text">🎁 Buka Aku!</div>
+        </div>
+
+        <!-- Kartu Ucapan Baru dengan Desain Surat -->
+        <div class="letter" id="letter">
+            <div class="letter-content">
+                <div class="photo-section">
+                    <div class="name">SEVENTEEN</div>
+                    <div class="photo-placeholder">
+                        <img src="foto/seventeen.jpg" alt="Birthday Person" />
+                    </div>
+                </div>
+                
+                <div class="message-section">
+                    <div class="decoration top-right">🎀</div>
+                    <div class="decoration bottom-left">🎁</div>
+                    
+                    <div class="message-content" id="indonesian-message" style="display:none">
+                        <p>Selamat ulang tahun!</p>
+<p>Hari ini adalah milikmu, dan kami berharap kamu bisa merayakannya dengan penuh kebahagiaan.</p>
+<p>Terima kasih karena sudah menjadi bagian dari perjalanan kami, dukunganmu sangat berarti.</p>
+<p>Semoga kamu selalu dikelilingi oleh orang-orang yang mencintaimu dan menyemangatimu.</p>
+<p>Tetap percaya pada dirimu sendiri, dan jangan takut untuk bermimpi besar.</p>
+<p>Kamu punya potensi luar biasa—teruslah melangkah maju!</p>
+
+                    </div>
+                    
+                    <div class="message-content korean" id="korean-message">
+                        <p>생일 축하해!</p>
+                        <p>오늘은 너의 날이야. 우리는 네가 행복하게 이 날을 기념하길 바란다.</p>
+                        <p>우리 여정의 일부가 되어줘서 고마워. 너의 응원은 정말 소중해.</p>
+                        <p>항상 너를 사랑하고 응원해주는 사람들로 둘러싸이길 바란다.</p>
+                        <p>자신을 믿고, 큰 꿈을 꾸는 것을 두려워하지 마.</p>
+                        <p>너는 놀라운 잠재력을 가지고 있어. 앞으로도 계속 나아가!</p>
+                    </div>
+                    
+                    <div class="button-container">
+                        <button class="translate-btn" id="korTranslateBtn">Translate</button>
+                        <button id="nextLetterBtn">Next</button>
+                    </div>
+                </div>              
+            </div>
+        </div>
+
+        <!-- Kartu Ucapan dari Tom Felton -->
+        <div class="letter" id="second-letter" style="display:none">
+            <div class="letter-content">
+                <div class="photo-section">
+                    <div class="name">TOM FELTON</div>
+                    <div class="photo-placeholder">
+                        <img src="foto/tomfelton.jpg" alt="Tom Felton" />
+                    </div>
+                </div>
+                
+                <div class="message-section">
+                    <div class="decoration top-right">✨</div>
+                    <div class="decoration bottom-left">🌟</div>
+                    
+                    <div class="message-content" id="english-message">
+                        <p>Happy birthday!</p>
+                        <p>I know we may have never met, but my prayers and best wishes are with you today.</p>
+                        <p>May all your dreams come true soon, and may you always be blessed with health and happiness.</p>
+                        <p>Keep being the best version of yourself, and dont compare yourself to others.</p>
+                        <p>You are special in your own way, and thats something to celebrate.</p>
+                        <p>Enjoy your special day!</p>
+                    </div>
+                    
+                    <div class="message-content" id="tom-indonesian-message" style="display:none">
+                        <p>Happy birthday!</p>
+<p>Aku tahu mungkin kita belum pernah bertemu, tapi doa dan harapan terbaikku sampai padamu hari ini.</p>
+<p>Semoga semua impianmu segera terwujud dan kamu selalu diberikan kesehatan serta keberkahan.</p>
+<p>Terus jadi versi terbaik dari dirimu sendiri, jangan bandingkan dirimu dengan orang lain.</p>
+<p>Kamu istimewa dengan caramu sendiri, dan itu patut dirayakan.</p>
+<p>Selamat menikmati hari spesialmu!</p>
+
+                    </div>
+                    
+                    <div class="button-container">
+                        <button class="translate-btn" id="ingTranslateBtn">Translate</button>
+                        <button id="nextToThirdLetterBtn">Next</button>
+                    </div>
+                </div>              
+            </div>
+        </div>
+        
+        <!-- Kartu Ucapan Ketiga -->
+        <div class="letter" id="third-letter" style="display:none">
+            <div class="letter-content">
+                <div class="photo-section">
+                    <div class="name">MADS MIKKELSEN</div>
+                    <div class="photo-placeholder">
+                        <img src="foto/mads.jpg" alt="Mads Mikkelsen" />
+                    </div>
+                </div>
+                
+                <div class="message-section">
+                    <div class="decoration top-right">💖</div>
+                    <div class="decoration bottom-left">🎉</div>
+                    
+                    <div class="message-content" id="mads-english">
+                        <p>Happy birthday!</p>
+<p>Year after year passes, and each year is a new opportunity to grow and learn.</p>
+<p>May this birthday bring more light, hope, and love into your life.</p>
+<p>Im proud to have a supporter as strong and positive as you.</p>
+<p>Dont forget to smile today — you deserve to be happy.</p>
+<p>May every step you take be blessed and filled with meaning.</p>
+                    </div>
+                    
+                    <div class="message-content" id="mads-indonesian" style="display:none">
+                        <p>Selamat ulang tahun!</p>
+<p>Tahun demi tahun berlalu, dan setiap tahun adalah kesempatan baru untuk tumbuh dan belajar.</p>
+<p>Semoga ulang tahun kali ini membawa lebih banyak cahaya, harapan, dan cinta dalam hidupmu.</p>
+<p>Aku bangga punya penggemar sekuat dan sepositif kamu.</p>
+<p>Jangan lupa tersenyum hari ini, kamu pantas untuk bahagia.</p>
+<p>Semoga setiap langkahmu selalu diberkahi dan dipenuhi makna.</p>
+
+                    </div>
+                    
+                    <div class="button-container">
+                        <button class="translate-btn" id="madsTranslateBtn">Translate</button>
+                        <button id="nextToFourthLetterBtn">Next</button>
+                    </div>
+                </div>              
+            </div>
+        </div>
+        
+        <!-- Kartu Ucapan Keempat -->
+        <div class="letter" id="fourth-letter" style="display:none">
+            <div class="letter-content">
+                <div class="photo-section">
+                    <div class="name">JACOB ELORDI</div>
+                    <div class="photo-placeholder">
+                        <img src="foto/JacobElordi.jpg" alt="Jacob Elordi" />
+                    </div>
+                </div>
+                
+                <div class="message-section">
+                    <div class="decoration top-right">🌸</div>
+                    <div class="decoration bottom-left">🌼</div>
+                    
+                    <div class="message-content" id="jacob-english">
+                        <p>Happy birthday!</p>
+                        <p>Thank you for being a part of this amazing community.</p>
+                        <p>Im always inspired by the spirit of everyone here — including you!</p>
+                        <p>On your special day, may you be surrounded by people who care for you and love you just as you are.</p>
+                        <p>Remember, every day is a new opportunity to become even better.</p>
+                        <p>May this year be full of achievements and happiness for you!</p>
+                        
+                    </div>
+                    
+                    <div class="message-content" id="jacob-indonesian" style="display:none">
+                        <p>Selamat ulang tahun!</p>
+                        <p>Terima kasih telah menjadi bagian dari komunitas yang luar biasa ini.</p>
+                        <p>Aku selalu terinspirasi oleh semangat kalian semua—termasuk kamu!</p>
+                        <p>Di hari istimewamu ini, semoga kamu dikelilingi oleh orang-orang yang peduli dan mencintaimu apa adanya.</p>
+                        <p>Ingat, setiap hari adalah kesempatan baru untuk menjadi lebih baik.</p>
+                        <p>Semoga tahun ini penuh dengan pencapaian dan kebahagiaan untukmu!</p>
+                    </div>
+                    
+                    <div class="button-container">
+                        <button class="translate-btn" id="jacobTranslateBtn">Translate</button>
+                        <button id="nextToFifthLetterBtn">Next</button>
+                    </div>
+                </div>              
+            </div>
+        </div>
+        
+        <!-- Kartu Ucapan Kelima -->
+        <div class="letter" id="fifth-letter" style="display:none">
+            <div class="letter-content">
+                <div class="photo-section">
+                    <div class="name">ROBBERT PATTINSON.</div>
+                    <div class="photo-placeholder">
+                        <img src="foto/RobertPattinson.jpg" alt="Robbert Pattinson" />
+                    </div>
+                </div>
+                
+                <div class="message-section">
+                    <div class="decoration top-right">🦸</div>
+                    <div class="decoration bottom-left">⚡</div>
+                    
+                    <div class="message-content" id="robert-english">
+                        <p>Happy birthday!</p>
+<p>Today is a moment to celebrate who you are and how far you’ve come.</p>
+<p>Never underestimate your own strength — you are much stronger than you think.</p>
+<p>May today give you new energy to keep moving forward and creating.</p>
+<p>Always take care of your health and don’t forget to love yourself as well.</p>
+<p>You deserve all the good things in life.</p>
+
+                    </div>
+                    
+                    <div class="message-content" id="robert-indonesian" style="display:none">
+                        <p>Happy birthday!</p>
+                        <p>Hari ini adalah momen untuk merayakan siapa dirimu dan sejauh apa kamu telah melangkah.</p>
+                        <p>Jangan pernah meremehkan kekuatanmu sendiri—kamu jauh lebih kuat daripada yang kamu kira.</p>
+                        <p>Semoga hari ini memberi energi baru untuk terus maju dan berkarya.</p>
+                        <p>Selalu jaga kesehatan dan jangan lupa untuk mencintai diri sendiri juga.</p>
+                        <p>Kamu berhak atas semua hal baik dalam hidup ini.</p>
+                        
+                    </div>
+                    
+                    <div class="button-container">
+                        <button class="translate-btn" id="robertTranslateBtn">Translate</button>
+                        <button id="nextToSixthLetterBtn">Next</button>
+                    </div>
+                </div>              
+            </div>
+        </div>
+        
+        <!-- Kartu Ucapan Keenam -->
+        <div class="letter" id="sixth-letter" style="display:none">
+            <div class="letter-content">
+                <div class="photo-section">
+                    <div class="name">EMMA WATSON</div>
+                    <div class="photo-placeholder">
+                        <img src="foto/emmawatson.jpg" alt="Emma Watson" />
+                    </div>
+                </div>
+                
+                <div class="message-section">
+                    <div class="decoration top-right">💎</div>
+                    <div class="decoration bottom-left">💃</div>
+                    
+                    <div class="message-content" id="emma-english">
+                        <p>Happy birthday!</p>
+                        <p>Today is a moment to celebrate who you are and how far you’ve come.</p>
+                        <p>Never underestimate your own strength — you are much stronger than you think.</p>
+                        <p>May today bring you fresh energy to keep moving forward and creating.</p>
+                        <p>Always take care of your health and remember to love yourself as well.</p>
+                        <p>You deserve all the good things in life.</p>
+                        
+                    </div>
+                    
+                    <div class="message-content" id="emma-indonesian" style="display:none">
+                        <p>Happy birthday!</p>
+                        <p>Hari ini adalah momen untuk merayakan siapa dirimu dan sejauh apa kamu telah melangkah.</p>
+                        <p>Jangan pernah meremehkan kekuatanmu sendiri—kamu jauh lebih kuat daripada yang kamu kira.</p>
+                        <p>Semoga hari ini memberi energi baru untuk terus maju dan berkarya.</p>
+                        <p>Selalu jaga kesehatan dan jangan lupa untuk mencintai diri sendiri juga.</p>
+                        <p>Kamu berhak atas semua hal baik dalam hidup ini.</p>
+                        
+                    </div>
+                    
+                    <div class="button-container">
+                        <button class="translate-btn" id="emmaTranslateBtn">Translate</button>
+                        <button id="nextToSeventhLetterBtn">Next</button>
+                    </div>
+                </div>              
+            </div>
+        </div>
+        
+        <!-- Kartu Ucapan Ketujuh -->
+        <div class="letter" id="seventh-letter" style="display:none">
+            <div class="letter-content">
+                <div class="photo-section">
+                    <div class="name">LANA DEL REY</div>
+                    <div class="photo-placeholder">
+                        <img src="foto/lana.jpg" alt="Lana Del Rey" />
+                    </div>
+                </div>
+                <div class="message-section">
+                    <div class="decoration top-right">⚡</div>
+                    <div class="decoration bottom-left">🔨</div>
+                    
+                    <div class="message-content" id="lana-english">
+                        <p>Happy birthday!</p>
+<p>Today, I hope you feel loved, appreciated, and respected, because you truly deserve it.</p>
+<p>Don’t let anything negative dim your spirit.</p>
+<p>You are part of something great, and your presence in this world has meaning.</p>
+<p>Keep spreading positivity and inspiration to those around you.</p>
+<p>May today be the beginning of many more joyful moments to come.</p>
+
+                    </div>
+                    
+                    <div class="message-content" id="lana-indonesian" style="display:none">
+                        <p>Happy birthday!</p>
+                        <p>Hari ini aku berharap kamu merasa dicintai, dihargai, dan dihormati, karena kamu pantas mendapatkannya.</p>
+                        <p>Jangan biarkan satu pun hal negatif merusak semangatmu.</p>
+                        <p>Kamu adalah bagian dari sesuatu yang besar, dan kehadiranmu di dunia ini membawa arti.</p>
+                        <p>Terus sebarkan hal-hal baik dan inspirasi untuk sekelilingmu.</p>
+                        <p>Semoga hari ini menjadi awal dari banyak kebahagiaan lainnya.</p>
+                        
+                    </div>
+                    
+                    <div class="button-container">
+                        <button class="translate-btn" id="lanaTranslateBtn">Translate</button>
+                        <button id="nextToEighthLetterBtn">Next</button>
+                    </div>
+                </div>              
+            </div>
+        </div>
+       
+        <div class="letter" id="eighth-letter" style="display:none">
+            <div class="letter-content">
+                <div class="photo-section">
+                    <div class="name">CAS</div>
+                    <div class="photo-placeholder">
+                        <img src="foto/cas.jpg" alt="Ciggerates After Sex" />
+                    </div>
+                </div>
+                
+                <div class="message-section">
+                    <div class="decoration top-right">⚡</div>
+                    <div class="decoration bottom-left">🔨</div>
+                    
+                    <div class="message-content" id="cas-english">
+                        <p>Happy birthday!</p>
+                        <p>Thank you for always supporting us and inspiring us in your own way.</p>
+                        <p>On your birthday, we want you to know that you are valued and appreciated.</p>
+                        <p>Keep lighting the fire within you, because it can also illuminate others.</p>
+                        <p>May this year be full of valuable lessons and the courage to try new things.</p>
+                        <p>You can achieve anything you dream of!</p>
+                        
+                    </div>
+                    
+                    <div class="message-content" id="cas-indonesian" style="display:none">
+                        <p>Happy birthday!</p>
+                        <p>Terima kasih sudah selalu mendukung kami dan memberi semangat lewat caramu sendiri.</p>
+                        <p>Di hari ulang tahunmu ini, kami ingin kamu tahu bahwa kamu berarti dan dihargai.</p>
+                        <p>Teruslah menyalakan cahaya dalam dirimu, karena itu bisa menerangi orang lain juga.</p>
+                        <p>Semoga tahun ini penuh dengan pelajaran berharga dan keberanian untuk terus mencoba hal baru.</p>
+                        <p>Kamu bisa mencapai apa pun yang kamu impikan!</p>
+                        
+                    </div>
+                    
+                    <div class="button-container">
+                        <button class="translate-btn" id="casTranslateBtn">Translate</button>
+                        <button id="nextToNinthLetterBtn">Next</button>
+                    </div>
+                </div>              
+            </div>
+        </div>
+        
+        <div class="letter" id="ninth-letter" style="display:none">
+            <div class="letter-content">
+                <div class="photo-section">
+                    <div class="name">BARNEY</div>
+                    <div class="photo-placeholder">
+                        <img src="foto/barney.jpeg" alt="Barney" />
+                    </div>
+                </div>
+                <div class="message-section">
+                    <div class="decoration top-right">⚡</div>
+                    <div class="decoration bottom-left">🔨</div> 
+                    <div class="message-content" id="barney-english">
+                        <p>Happy birthday!</p>
+<p>Time flies, doesnt it? But every birthday is a reminder that you continue to grow into a strong and amazing person.</p>
+<p>Dont be afraid to fail, because thats where you learn and grow.</p>
+<p>Keep being the best version of yourself, the world needs people like you.</p>
+<p>Youre amazing, even if you havent fully realized it yet.</p>
+<p>Celebrate today with pride!</p>
+
+                    </div>   
+                    <div class="message-content" id="barney-indonesian" style="display:none">
+                        <p>Selamat ulang tahun!</p>
+                        <p>Waktu terasa cepat ya? Tapi setiap ulang tahun adalah pengingat bahwa kamu terus bertumbuh menjadi pribadi yang kuat dan luar biasa.</p>
+                        <p>Jangan takut gagal, karena dari sanalah kamu belajar dan berkembang.</p>
+                        <p>Teruslah menjadi versi terbaik dari dirimu sendiri, dunia membutuhkan orang sepertimu.</p>
+                        <p>Kamu hebat, bahkan jika kamu belum menyadarinya sepenuhnya.</p>
+                        <p>Rayakan hari ini dengan bangga!</p>
+                        
+                    </div>
+                    <div class="button-container">
+                        <button class="translate-btn" id="barneyTranslateBtn">Translate</button>
+                        <button id="nextToTenthLetterBtn">Next</button>
+                    </div>
+                </div>              
+            </div>
+        </div>
+
+        <div class="letter" id="tenth-letter" style="display:none">
+            <div class="letter-content">
+                <div class="photo-section">
+                    <div class="name">BASKARA PUTRA</div>
+                    <div class="photo-placeholder">
+                        <img src="foto/bas.jpg" alt="Baskara Putra" />
+                    </div>
+                </div>
+                
+                <div class="message-section">
+                    <div class="decoration top-right">💖</div>
+                    <div class="decoration bottom-left">🎉</div>
+                    
+                    <div class="message-content">
+                        <p>Selamat ulang tahun.</p>
+                        <p>Semoga hari ini kamu bisa berhenti sejenak, menarik napas dalam-dalam, dan merasa cukup—cukup dicintai, cukup kuat, cukup jadi dirimu sendiri.</p>
+                        <p>Hidup memang tidak selalu ringan, tapi kamu sudah sampai sejauh ini. Itu bukan hal kecil.</p>
+                        <p>Aku doakan tahun ini memberi ruang buatmu tumbuh tanpa terburu-buru, belajar tanpa harus luka terus, dan bahagia tanpa syarat.</p>
+                        <p>Terima kasih sudah ada. Tetap hidup, ya.</p>
+                    </div>
+                    
+                    <div class="button-container">
+                        <button id="nextToEleventhLetterBtn">Next</button>
+                    </div>
+                </div>              
+            </div>
+        </div>
+
+        <div class="letter" id="eleventh-letter" style="display:none">
+            <div class="letter-content">
+                <div class="photo-section">
+                    <div class="name">KAK GEM</div>
+                    <div class="photo-placeholder">
+                        <img src="foto/kak.jpg" alt="Kak Gem" />
+                    </div>
+                </div>
+                
+                <div class="message-section">
+                    <div class="decoration top-right">💖</div>
+                    <div class="decoration bottom-left">🎉</div>
+                    
+                    <div class="message-content">
+                        <p>Selamat ulang tahun!</p>
+<p>Hari ini adalah momen kamu, jadi jangan sia-siakan, ya! Merayakan ulang tahun itu bukan cuma soal umur, tapi tentang seberapa jauh kamu udah berkembang dan seberapa banyak kamu udah jadi versi terbaik dari diri kamu sendiri.</p>
+<p>Di tahun yang baru ini, semoga semuanya semakin lancar, semakin diberkahi, dan semoga kamu semakin deket sama mimpi-mimpimu.</p>
+<p>Yang penting, jangan pernah lupa buat jaga diri, terus berusaha, dan tetap semangat! Kamu itu luar biasa!</p>
+<p>PAHAM? Jadi jangan lupa untuk terus jadi pribadi yang lebih baik, ya!</p>
+<p>Selamat ulang tahun, terus berkembang dan jangan berhenti bersinar!</p>
+                    </div>
+                    
+                    <div class="button-container">
+                        <button id="nextToTwelfthLetterBtn">Next</button>
+                    </div>
+                </div>              
+            </div>
+        </div>
+
+        <div class="letter" id="twelfth-letter" style="display:none">
+            <div class="letter-content">
+                <div class="message-section2">
+                    <div class="decoration top-right">🎬</div>
+                    <div class="decoration bottom-left">🎥</div>
+                    
+                    <div class="video-container">
+                        <!-- Tambahkan playsinline untuk mobile -->
+                        <video width="560" height="315" controls loop playsinline>
+                            <source src="foto/prabowo.mp4" type="video/mp4">
+                        </video>
+                        <p class="audio-warning">🔊 Klik tombol unmute (🔇) di player jika suara tidak muncul</p>
+                    </div>
+                    
+                    <div class="button-container">
+                        <button id="nextToThirteenthLetterBtn">Next</button>
+                    </div>
+                </div>              
+            </div>
+        </div>
+        
+        <div class="letter" id="thirteenth-letter" style="display:none">
+            <div class="letter-content">
+                <div class="photo-section">
+                    <div class="name">PEMBUAT</div>
+                    <div class="photo-placeholder">
+                        <img src="foto/spe.jpg" alt="Special Message" />
+                    </div>
+                </div>
+                
+                <div class="message-section">
+                    <div class="decoration top-right">💖</div>
+                    <div class="decoration bottom-left">🎉</div>
+                    
+                    <div class="message-content">
+                        <p>Selamat ulang tahun, Panca, yang ke-20!</p>
+                        <p>Semoga selalu sehat dan selalu kuat untuk bertahan dalam setiap rintangan yang akan datang.</p>
+                        <p>Di usia yang bukan lagi belasan, pasti akan ada lebih banyak tantangan ke depannya, tapi semoga kamu selalu diberi kekuatan untuk menghadapinya.</p>
+                        <p>Diduakan agar selalu dikelilingi oleh orang-orang yang mencintai kamu dan yang kamu cintai.</p>
+                        <p>Jangan lupa makan dan bernafas, biar tetap ada di bumi ini, ya!</p>
+                        <p>Selamat ulang tahun, yeyeye!</p>
+                    
+                    <div class="button-container">
+                        <button id="closeLetterBtn">Tutup Surat</button>
+                    </div>
+                </div>              
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+          // Fungsi untuk membuat confetti yang keluar dari amplop
+          function createEnvelopeConfetti() {
+            const envelope = document.getElementById('envelope');
+            const envelopeRect = envelope.getBoundingClientRect();
+            const centerX = envelopeRect.left + envelopeRect.width / 2;
+            const centerY = envelopeRect.top + envelopeRect.height / 2;
+            
+            const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#ff8800', '#ff0088'];
+            const shapes = ['circle', 'square', 'triangle'];
+            
+            // Create 100 pieces of confetti
+            for (let i = 0; i < 100; i++) {
+                const confetti = document.createElement('div');
+                confetti.classList.add('envelope-confetti');
+                
+                // Random properties
+                const size = Math.random() * 12 + 6;
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                const shape = shapes[Math.floor(Math.random() * shapes.length)];
+                const angle = Math.random() * Math.PI * 2;
+                const distance = Math.random() * 200 + 100;
+                const tx = Math.cos(angle) * distance;
+                const ty = Math.sin(angle) * distance - 50; // sedikit ke atas
+                const duration = Math.random() * 0.5 + 1;
+                const delay = Math.random() * 0.3;
+                
+                // Apply styles
+                confetti.style.width = `${size}px`;
+                confetti.style.height = `${size}px`;
+                confetti.style.backgroundColor = color;
+                confetti.style.left = `${centerX}px`;
+                confetti.style.top = `${centerY}px`;
+                confetti.style.setProperty('--tx', `${tx}px`);
+                confetti.style.setProperty('--ty', `${ty}px`);
+                confetti.style.animationDuration = `${duration}s`;
+                confetti.style.animationDelay = `${delay}s`;
+                
+                // Shape styling
+                if (shape === 'circle') {
+                    confetti.style.borderRadius = '50%';
+                } else if (shape === 'triangle') {
+                    confetti.style.width = '0';
+                    confetti.style.height = '0';
+                    confetti.style.backgroundColor = 'transparent';
+                    confetti.style.borderLeft = `${size/2}px solid transparent`;
+                    confetti.style.borderRight = `${size/2}px solid transparent`;
+                    confetti.style.borderBottom = `${size}px solid ${color}`;
+                }
+                
+                document.body.appendChild(confetti);
+                
+                // Remove confetti after animation completes
+                setTimeout(() => {
+                    confetti.remove();
+                }, duration * 1000);
+            }
+        }
+
+
+          // Animasi Jatuhan
+          function createFallingItems() {
+    const items = ['🎈', '🎊', '🎀', '🌟', '🎉', '🎂'];
+    const container = document.querySelector('.center-wrapper') || document.body;
+
+    // Hapus item lama jika ada
+    document.querySelectorAll('.falling-item').forEach(el => el.remove());
+
+    for (let i = 0; i < 40; i++) {
+        const item = document.createElement('div');
+        item.className = 'falling-item';
+        item.textContent = items[Math.floor(Math.random() * items.length)];
+        
+        // Atur posisi acak
+        item.style.left = `${Math.random() * 100}vw`;
+        
+        // Atur animasi unik untuk masing-masing
+        const duration = 3 + Math.random() * 7;
+        const delay = Math.random() * 5;
+        const size = 20 + Math.random() * 30;
+        
+        item.style.animation = `falling ${duration}s linear ${delay}s infinite`;
+        item.style.fontSize = `${size}px`;
+        
+        container.appendChild(item);
+    }
+}
+
+// Panggil fungsi setelah DOM siap
+document.addEventListener('DOMContentLoaded', createFallingItems);
+
+        // Fungsi untuk membuat confetti yang keluar dari amplop
+        function createEnvelopeConfetti() {
+            const envelope = document.getElementById('envelope');
+            const envelopeRect = envelope.getBoundingClientRect();
+            const centerX = envelopeRect.left + envelopeRect.width / 2;
+            const centerY = envelopeRect.top + envelopeRect.height / 2;
+            
+            const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#ff8800', '#ff0088'];
+            const shapes = ['circle', 'square', 'triangle'];
+            
+            // Create 100 pieces of confetti
+            for (let i = 0; i < 100; i++) {
+                const confetti = document.createElement('div');
+                confetti.classList.add('envelope-confetti');
+                
+                // Random properties
+                const size = Math.random() * 12 + 6;
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                const shape = shapes[Math.floor(Math.random() * shapes.length)];
+                const angle = Math.random() * Math.PI * 2;
+                const distance = Math.random() * 200 + 100;
+                const tx = Math.cos(angle) * distance;
+                const ty = Math.sin(angle) * distance - 50; // sedikit ke atas
+                const duration = Math.random() * 0.5 + 1;
+                const delay = Math.random() * 0.3;
+                
+                // Apply styles
+                confetti.style.width = `${size}px`;
+                confetti.style.height = `${size}px`;
+                confetti.style.backgroundColor = color;
+                confetti.style.left = `${centerX}px`;
+                confetti.style.top = `${centerY}px`;
+                confetti.style.setProperty('--tx', `${tx}px`);
+                confetti.style.setProperty('--ty', `${ty}px`);
+                confetti.style.animationDuration = `${duration}s`;
+                confetti.style.animationDelay = `${delay}s`;
+                
+                // Shape styling
+                if (shape === 'circle') {
+                    confetti.style.borderRadius = '50%';
+                } else if (shape === 'triangle') {
+                    confetti.style.width = '0';
+                    confetti.style.height = '0';
+                    confetti.style.backgroundColor = 'transparent';
+                    confetti.style.borderLeft = `${size/2}px solid transparent`;
+                    confetti.style.borderRight = `${size/2}px solid transparent`;
+                    confetti.style.borderBottom = `${size}px solid ${color}`;
+                }
+                
+                document.body.appendChild(confetti);
+                
+                // Remove confetti after animation completes
+                setTimeout(() => {
+                    confetti.remove();
+                }, (duration + delay) * 1000);
+            }
+        }
+
+        // Fungsi Buka Amplop
+        document.getElementById('envelope').addEventListener('click', function() {
+            this.classList.add('open');
+            
+            // Trigger confetti explosion dari dalam amplop
+            createEnvelopeConfetti();
+            
+            setTimeout(() => {
+                this.style.display = 'none';
+                document.getElementById('letter').style.display = 'block';
+            }, 500);
+        });
+
+        // Fungsi Next ke Surat Tom
+        document.getElementById('nextLetterBtn').addEventListener('click', function() {
+            document.getElementById('letter').style.display = 'none';
+            document.getElementById('second-letter').style.display = 'block';
+        });
+
+        // Fungsi Next ke Surat Ketiga
+        document.getElementById('nextToThirdLetterBtn').addEventListener('click', function() {
+            document.getElementById('second-letter').style.display = 'none';
+            document.getElementById('third-letter').style.display = 'block';
+        });
+        
+        // Fungsi Next ke Surat Keempat
+        document.getElementById('nextToFourthLetterBtn').addEventListener('click', function() {
+            document.getElementById('third-letter').style.display = 'none';
+            document.getElementById('fourth-letter').style.display = 'block';
+        });
+        
+        // Fungsi Next ke Surat Kelima
+        document.getElementById('nextToFifthLetterBtn').addEventListener('click', function() {
+            document.getElementById('fourth-letter').style.display = 'none';
+            document.getElementById('fifth-letter').style.display = 'block';
+        });
+        
+        // Fungsi Next ke Surat Keenam
+        document.getElementById('nextToSixthLetterBtn').addEventListener('click', function() {
+            document.getElementById('fifth-letter').style.display = 'none';
+            document.getElementById('sixth-letter').style.display = 'block';
+        });
+        
+        // Fungsi Next ke Surat Ketujuh
+        document.getElementById('nextToSeventhLetterBtn').addEventListener('click', function() {
+            document.getElementById('sixth-letter').style.display = 'none';
+            document.getElementById('seventh-letter').style.display = 'block';
+        });
+        
+        // Fungsi Next ke Surat Kedelapan (Video)
+        document.getElementById('nextToEighthLetterBtn').addEventListener('click', function() {
+            document.getElementById('seventh-letter').style.display = 'none';
+            document.getElementById('eighth-letter').style.display = 'block';
+        });
+        
+        // Fungsi Next ke Surat Kesembilan
+        document.getElementById('nextToNinthLetterBtn').addEventListener('click', function() {
+    document.getElementById('eighth-letter').style.display = 'none';
+    document.getElementById('ninth-letter').style.display = 'block';
+});
+
+// Dari letter 9 ke letter 10
+document.getElementById('nextToTenthLetterBtn').addEventListener('click', function() {
+    document.getElementById('ninth-letter').style.display = 'none';
+    document.getElementById('tenth-letter').style.display = 'block';
+});
+
+// Dari letter 10 ke letter 11
+document.getElementById('nextToEleventhLetterBtn').addEventListener('click', function() {
+    document.getElementById('tenth-letter').style.display = 'none';
+    document.getElementById('eleventh-letter').style.display = 'block';
+});
+
+// Dari letter 11 ke letter 12
+document.getElementById('nextToTwelfthLetterBtn').addEventListener('click', function() {
+    document.getElementById('eleventh-letter').style.display = 'none';
+    document.getElementById('twelfth-letter').style.display = 'block';
+});
+
+// Dari letter 12 ke letter 13
+document.getElementById('nextToThirteenthLetterBtn').addEventListener('click', function() {
+    document.getElementById('twelfth-letter').style.display = 'none';
+    document.getElementById('thirteenth-letter').style.display = 'block';
+});
+
+        // Fungsi Tutup Surat (hanya di letter terakhir)
+        document.getElementById('closeLetterBtn').addEventListener('click', function() {
+            document.getElementById('thirteenth-letter').style.display = 'none';
+            const envelope = document.getElementById('envelope');
+            envelope.style.display = 'block';
+            envelope.classList.remove('open');
+        });
+
+        // Translation functionality for Korean/Indonesian (SEVENTEEN letter)
+        document.getElementById('korTranslateBtn').addEventListener('click', function() {
+            const koreanMsg = document.getElementById('korean-message');
+            const indonesianMsg = document.getElementById('indonesian-message');
+            
+            // Toggle visibility
+            const isKoreanVisible = window.getComputedStyle(koreanMsg).display !== 'none';
+            
+            if (isKoreanVisible) {
+                koreanMsg.style.display = 'none';
+                indonesianMsg.style.display = 'block';
+            } else {
+                koreanMsg.style.display = 'block';
+                indonesianMsg.style.display = 'none';
+            }
+        });
+
+        // Translation functionality for English/Indonesian (Tom's letter)
+        document.getElementById('ingTranslateBtn').addEventListener('click', function() {
+            const englishMsg = document.getElementById('english-message');
+            const indonesianMsg = document.getElementById('tom-indonesian-message');
+            
+            if (englishMsg.style.display === 'none') {
+                englishMsg.style.display = 'block';
+                indonesianMsg.style.display = 'none';
+            } else {
+                englishMsg.style.display = 'none';
+                indonesianMsg.style.display = 'block';
+            }
+        });
+        
+        // Translation functionality for Jungkook's letter
+        document.getElementById('madsTranslateBtn').addEventListener('click', function() {
+            const englishMsg = document.getElementById('mads-english');
+            const indonesianMsg = document.getElementById('mads-indonesian');
+            
+            if (englishMsg.style.display === 'none') {
+                englishMsg.style.display = 'block';
+                indonesianMsg.style.display = 'none';
+            } else {
+                englishMsg.style.display = 'none';
+                indonesianMsg.style.display = 'block';
+            }
+        });
+        
+        // Translation functionality for Taeyeon's letter
+        document.getElementById('jacobTranslateBtn').addEventListener('click', function() {
+            const englishMsg = document.getElementById('jacob-english');
+            const indonesianMsg = document.getElementById('jacob-indonesian');
+            
+            if (englishMsg.style.display === 'none') {
+                englishMsg.style.display = 'block';
+                indonesianMsg.style.display = 'none';
+            } else {
+                englishMsg.style.display = 'none';
+                indonesianMsg.style.display = 'block';
+            }
+        });
+        
+        // Translation functionality for Robert's letter
+        document.getElementById('robertTranslateBtn').addEventListener('click', function() {
+            const englishMsg = document.getElementById('robert-english');
+            const indonesianMsg = document.getElementById('robert-indonesian');
+            
+            if (englishMsg.style.display === 'none') {
+                englishMsg.style.display = 'block';
+                indonesianMsg.style.display = 'none';
+            } else {
+                englishMsg.style.display = 'none';
+                indonesianMsg.style.display = 'block';
+            }
+        });
+        
+        // Translation functionality for Lisa's letter
+        document.getElementById('emmaTranslateBtn').addEventListener('click', function() {
+            const englishMsg = document.getElementById('emma-english');
+            const indonesianMsg = document.getElementById('emma-indonesian');
+            
+            if (englishMsg.style.display === 'none') {
+                englishMsg.style.display = 'block';
+                indonesianMsg.style.display = 'none';
+            } else {
+                englishMsg.style.display = 'none';
+                indonesianMsg.style.display = 'block';
+            }
+        });
+        
+        // Translation functionality for Chris's letter
+        document.getElementById('lanaTranslateBtn').addEventListener('click', function() {
+            const englishMsg = document.getElementById('lana-english');
+            const indonesianMsg = document.getElementById('lana-indonesian');
+            
+            if (englishMsg.style.display === 'none') {
+                englishMsg.style.display = 'block';
+                indonesianMsg.style.display = 'none';
+            } else {
+                englishMsg.style.display = 'none';
+                indonesianMsg.style.display = 'block';
+            }
+        });
+
+        document.getElementById('casTranslateBtn').addEventListener('click', function() {
+            const englishMsg = document.getElementById('cas-english');
+            const indonesianMsg = document.getElementById('cas-indonesian');
+            
+            if (englishMsg.style.display === 'none') {
+                englishMsg.style.display = 'block';
+                indonesianMsg.style.display = 'none';
+            } else {
+                englishMsg.style.display = 'none';
+                indonesianMsg.style.display = 'block';
+            }
+        });
+
+        document.getElementById('barneyTranslateBtn').addEventListener('click', function() {
+            const englishMsg = document.getElementById('barney-english');
+            const indonesianMsg = document.getElementById('barney-indonesian');
+            
+            if (englishMsg.style.display === 'none') {
+                englishMsg.style.display = 'block';
+                indonesianMsg.style.display = 'none';
+            } else {
+                englishMsg.style.display = 'none';
+                indonesianMsg.style.display = 'block';
+            }
+        });
+        // Initialize
+        window.onload = function() {
+            // Initial states are now set directly in HTML with style attributes
+        };
+
+        document.getElementById('twelfth-letter').addEventListener('show', function() {
+    const video = this.querySelector('video');
+    video.muted = false;
+    video.volume = 0.7; // 70% volume
+    video.play().catch(e => {
+        console.log("Autoplay blocked:", e);
+        // Fallback: Tampilkan pesan
+        this.querySelector('.audio-warning').style.color = "red";
+    });
+});
+    </script>
+</body>
+</html>
